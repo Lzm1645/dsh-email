@@ -1,0 +1,4 @@
+# dsh-email bundle patch layer
+- insert:
+    - id: dsh-email
+      name: 'dsh-email'

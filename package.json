@@ -1,0 +1,17 @@
+{
+  "name": "dsh-email",
+  "version": "0.1.0",
+  "description": "给 DSH agent 读写本机 Mail.app 邮件的插件：list / read / search / send（发送默认关闭）。",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": ["index.js", "lib", "cordis.patch.yml", "README.md", "LICENSE"],
+  "keywords": ["dsh", "dsh-plugin", "cordis", "email", "mail"],
+  "license": "MIT",
+  "scripts": { "test": "node --test tests/*.test.mjs" },
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } }
+}
